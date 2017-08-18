@@ -13,7 +13,7 @@ public class SchedulerTask {
 
     private int count = 0;
 
-    @Scheduled(cron = "*/6000 * * * * ?")
+    @Scheduled(cron = "0 0/30 * * * ?")
     private void process() {
         log.info("this is scheduler task runing  "+(count++));
     }
